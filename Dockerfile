@@ -10,4 +10,4 @@ COPY ./Mandelbrot.java /java/src/
 
 RUN ["javac","/java/src/Mandelbrot.java"]
 
-CMD java /java/src/Mandelbrot $FILEPATH $INTERACTION_STEP $SLEEP
+CMD ["/java/src/Mandelbrot.class",$FILEPATH,$INTERACTION_STEP,$SLEEP]
