@@ -8,9 +8,9 @@ ENV SLEEP=5000
 
 WORKDIR /.
 
-COPY ./Mandelbrot.java /
+COPY ./Mandelbrot.class /
 
-RUN ["javac","/Mandelbrot.java"]
+#RUN ["javac","/Mandelbrot.java"]
 
 #CMD ["ll"]
-#ENTRYPOINT java Mandelbrot.class $FILEPATH $INTERACTION_STEP $SLEEP
+ENTRYPOINT java Mandelbrot.class $FILEPATH $INTERACTION_STEP $SLEEP
