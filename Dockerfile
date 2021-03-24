@@ -6,8 +6,8 @@ ENV FILEPATH=mandelbrot.jpg
 ENV INTERACTION_STEP=3
 ENV SLEEP=5000
 
-COPY ./Mandelbrot.java /java/src/
+COPY ./Mandelbrot.java /
 
-RUN ["javac","/java/src/Mandelbrot.java"]
+RUN ["javac","/Mandelbrot.java"]
 
-ENTRYPOINT java /java/src/Mandelbrot.class $FILEPATH $INTERACTION_STEP $SLEEP
+ENTRYPOINT java /Mandelbrot.class $FILEPATH $INTERACTION_STEP $SLEEP
