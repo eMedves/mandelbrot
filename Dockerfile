@@ -8,6 +8,6 @@ ENV SLEEP=5000
 
 COPY ./Mandelbrot.java /java/src/
 
-RUN ["javac","/java/src/Mandelbrot.java","-d","/java/bin"]
+RUN ["javac","/java/src/Mandelbrot.java"]
 
-CMD java /java/bin/Mandelbrot $FILEPATH $INTERACTION_STEP $SLEEP
+CMD java /java/src/Mandelbrot $FILEPATH $INTERACTION_STEP $SLEEP
