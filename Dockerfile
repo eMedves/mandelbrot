@@ -6,6 +6,8 @@ ENV FILEPATH=mandelbrot.jpg
 ENV INTERACTION_STEP=3
 ENV SLEEP=5000
 
+WORKDIR /.
+
 COPY ./Mandelbrot.java /
 
 RUN ["javac","/Mandelbrot.java"]
