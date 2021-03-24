@@ -1,4 +1,4 @@
-FROM binarybabel/jdk:8-alpine
+FROM binarybabel/oracle-jdk:8-alpine
 
 ENV ACCEPT_ORACLE_BCLA=true
 
