@@ -1,4 +1,4 @@
-FROM binarybabel/oracle-jdk:8-alpine
+FROM binarybabel/oracle-jdk:8-debian
 
 ENV ACCEPT_ORACLE_BCLA=true
 
@@ -12,5 +12,5 @@ COPY ./Mandelbrot.java /
 
 RUN ["javac","/Mandelbrot.java"]
 
-CMD ["ll"]
+#CMD ["ll"]
 #ENTRYPOINT java Mandelbrot.class $FILEPATH $INTERACTION_STEP $SLEEP
