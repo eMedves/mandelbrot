@@ -12,4 +12,4 @@ COPY ./Mandelbrot.class /
 
 #RUN ["javac","/Mandelbrot.java"]
 
-CMD cd / && java Mandelbrot.class $FILEPATH $INTERACTION_STEP $SLEEP
+CMD java Mandelbrot.class $FILEPATH $INTERACTION_STEP $SLEEP
