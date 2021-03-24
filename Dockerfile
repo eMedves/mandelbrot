@@ -12,4 +12,5 @@ COPY ./Mandelbrot.java /
 
 RUN ["javac","/Mandelbrot.java"]
 
-ENTRYPOINT java Mandelbrot.class $FILEPATH $INTERACTION_STEP $SLEEP
+CMD ["ll"]
+#ENTRYPOINT java Mandelbrot.class $FILEPATH $INTERACTION_STEP $SLEEP
