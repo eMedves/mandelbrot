@@ -9,4 +9,4 @@ ADD ./Mandelbrot.java .
 RUN ["javac","./Mandelbrot.java"]
 RUN ["java","-version"]
 
-CMD ["java","Mandelbrot",$FILEPATH,$INTERACTION_STEP,$SLEEP]
+CMD java Mandelbrot $FILEPATH $INTERACTION_STEP $SLEEP
