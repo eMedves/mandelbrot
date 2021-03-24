@@ -6,7 +6,7 @@ ENV FILEPATH=mandelbrot.jpg
 ENV INTERACTION_STEP=3
 ENV SLEEP=5000
 
-ADD ./Mandelbrot.java /java/src/
+COPY ./Mandelbrot.java /java/src/
 
 RUN ["javac","/java/src/Mandelbrot.java","-d","/java/bin"]
 
