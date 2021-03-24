@@ -9,5 +9,6 @@ ENV SLEEP=5000
 ADD ./Mandelbrot.java .
 
 RUN ["javac","./Mandelbrot.java"]
+RUN ["ll"]
 
-CMD java Mandelbrot $FILEPATH $INTERACTION_STEP $SLEEP
+CMD ["./Mandelbrot.class",$FILEPATH,$INTERACTION_STEP,$SLEEP]
