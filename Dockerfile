@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM openjdk:8-jdk-slim
 
 ENV FILEPATH=mandelbrot.jpg
 ENV INTERACTION_STEP=3
