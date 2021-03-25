@@ -68,7 +68,7 @@ public class Mandelbrot extends Canvas {
   private boolean optDrawGrid;
   private Image img;
   private String msg;
-  private static String filepath = "mandelbrot.jpg";
+  private static String filepath = "mandelbrot.png";
   
   private ForkJoinPool fjPool = new ForkJoinPool();
 
@@ -236,7 +236,7 @@ public class Mandelbrot extends Canvas {
     BufferedImage image = new BufferedImage(cm, raster, false, null);
 	
 	try {
-	ImageIO.write(image, "jpg", new File(filepath));
+	ImageIO.write(image, "png", new File(filepath));
 	} catch (Exception e) {
 		e.printStackTrace();
 	}
