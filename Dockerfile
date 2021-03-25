@@ -1,6 +1,6 @@
 FROM openjdk:8-jdk-slim
 
-ENV FILEPATH=mandelbrot.jpg
+ENV FILEPATH=mandelbrot.png
 ENV INTERACTION_STEP=3
 ENV SLEEP=5000
 
