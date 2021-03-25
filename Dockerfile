@@ -9,6 +9,8 @@ ADD ./Mandelbrot.java .
 RUN ["javac","./Mandelbrot.java"]
 RUN ["mkdir","/output"]
 
+ADD ./index.html ./output/
+
 VOLUME ["/output"]
 
 CMD java Mandelbrot "/output/$FILENAME" $INTERACTION_STEP $SLEEP
